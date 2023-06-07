@@ -1,0 +1,31 @@
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    background-color: $light-color;
+    border-bottom: 2px solid $header-color;
+    &__list {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 0;
+        padding-left: 0;
+    }
+    &__item {
+            list-style-type: none;
+    }
+    &__link {
+            text-decoration: none;
+            color: $dark-color;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 40px;
+            padding: 8px 7px;
+            &:hover {
+                background-color: $header-color;
+                text-decoration: underline;
+                transition: all 0.3s;
+            }
+    }
+}
