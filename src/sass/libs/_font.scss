@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Liberation Mono';
+    src: local('Liberation Mono'), local('LiberationMono'),
+        url('../fonts/LiberationMono.woff2') format('woff2'),
+        url('../fonts/LiberationMono.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+    font-family: 'Liberation Mono';
+    src: local('Liberation Mono Bold'), local('LiberationMono-Bold'),
+        url('../fonts/LiberationMono-Bold.woff2') format('woff2'),
+        url('../fonts/LiberationMono-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: fallback;
+}

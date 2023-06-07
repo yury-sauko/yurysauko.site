@@ -1,0 +1,92 @@
+.about-sect {
+    position: relative;
+    min-height: 100vh;
+    padding: 122px 0 50px 0;
+    background-color: $light-color;
+    &__header {
+        position: absolute;
+        top: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+        line-height: 72px;
+        font-size: 72px;
+        font-weight: 700;
+        color: $header-color;
+    }
+    &__subheader {
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        margin-bottom: 0;
+        line-height: 36px;
+        font-size: 36px;
+        font-weight: 700;
+        color: $dark-color;
+    }
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+    }
+    &__text {
+        flex-basis: 50%;
+        color: $dark-color;
+        font-size: 16px;
+        line-height: 24px;
+        p {
+            text-indent: 24px;
+            margin-bottom: 0;
+        }
+        ul {
+            margin-bottom: 0;
+            padding-left: 0;
+            list-style-type: none;
+            li::before {
+                content: "\2714";
+                color: $second-color;
+                padding-right: 11px;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: $second-color;
+        }
+    }
+    &__skills {
+        flex-basis: 50%;
+        padding: 0 50px;
+        color: $dark-color;
+        font-size: 16px;
+        line-height: 24px;
+        &-wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-container {
+            width: 100%;
+            background-color: $header-color;
+        }
+        &-html {
+            background-color: $second-color;
+            width: $skill-html;
+        }
+        &-css {
+            background-color: $second-color;
+            width: $skill-css;
+        }
+        &-js {
+            background-color: $second-color;
+            width: $skill-js;
+        }
+        &-git {
+            background-color: $second-color;
+            width: $skill-git;
+        }
+        &-figma {
+            background-color: $second-color;
+            width: $skill-figma;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+@import "libs/bootstrap-reboot.min";
+@import "libs/font";
+@import "libs/animate";
+
+* {
+    font-family: 'Liberation Mono', monospace;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+@import "base/variables";
+@import "blocks/main-sect";
+@import "blocks/about-sect";
+@import "blocks/portfolio-sect";
+@import "blocks/contacts-sect";
+@import "blocks/animations";
