@@ -1,7 +1,96 @@
 .contacts-sect {
-    min-height: 500px;
-    padding: 50px 0 0 0;
+    position: relative;
+    padding: 137px 0 0 0;
     background-color: $light-color;
-    text-align: center;
-    color: $dark-color;
+    &__header {
+        position: absolute;
+        top: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 0;
+        line-height: 72px;
+        font-size: 72px;
+        font-weight: 700;
+        color: $header-color;
+    }
+    &__subheader {
+        position: absolute;
+        top: 53px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+        margin-bottom: 0;
+        line-height: 36px;
+        font-size: 36px;
+        font-weight: 700;
+        color: $dark-color;
+    }
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item {
+        flex-basis: 50%;
+        a {
+            display: inline-block;
+            text-decoration: none;
+            img {
+                width: 30px;
+                height: 30px;
+                float: left;
+            }
+            span {
+                font-size: 16px;
+                line-height: 30px;
+                font-weight: 400;
+                color: $dark-color;
+                padding-left: 5px;
+                &:hover {
+                    color: $second-color;
+                    transition: all 0.3s;
+                }
+            }
+        }
+        &:nth-child(1) {
+            order: 1;
+            text-align: right;
+            margin-bottom: 30px;
+            padding-right: 25px;
+        }
+        &:nth-child(2) {
+            order: 3;
+            text-align: right;
+            padding-right: 25px;
+        }
+        &:nth-child(3) {
+            order: 2;
+            margin-bottom: 30px;
+            padding-left: 25px;
+        }
+        &:nth-child(4) {
+            order: 4;
+            padding-left: 25px;
+        }
+    }
+    &__copyright {
+        width: 100%;
+        margin-top: 30px;
+        background-color: $dark-color;
+        text-align: center;
+        span {
+            font-size: 16px;
+            line-height: 50px;
+            font-weight: 400;
+            color: $light-color;
+            position: relative;
+            &::before {
+                content: '\00A9';
+                font-size: 20px;
+                position: absolute;
+                left: -20px;
+            }
+        }
+    }
 }
