@@ -1,11 +1,13 @@
 .menu {
-    display: none;
     position: fixed;
     top: 0;
     z-index: 2;
     width: 100%;
     background-color: $light-color;
     border-bottom: 2px solid $header-color;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s linear, visibility 0.5s linear;
     &__list {
         display: flex;
         justify-content: space-around;
@@ -22,10 +24,16 @@
             font-weight: 400;
             line-height: 40px;
             padding: 8px 7px;
+            &_active,
             &:hover {
-                background-color: $header-color;
+                background: radial-gradient(circle, rgba(245,255,250,1) 0%, rgba(228,228,228,1) 100%);
                 text-decoration: underline;
                 transition: all 0.3s;
             }
+    }
+    &_hidden {
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.5s linear, visibility 0.5s linear;
     }
 }

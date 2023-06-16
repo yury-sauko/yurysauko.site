@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    <nav class="menu">
+    <nav class="menu menu_hidden">
         <div class="container">
             <ul class="menu__list">
                 <li class="menu__item"><a href="#main" class="menu__link">Главная</a></li>
@@ -32,7 +32,7 @@
         </div>
     </nav>
 
-    <section id="main" class="main-sect">
+    <section id="main" class="section main-sect">
         <div class="container">
             <div class="main-sect__my-photo">
                 <img src="img/yurys-photo.png" alt="Фото Юрий Савко">
@@ -66,14 +66,14 @@
 
             <div class="main-sect__to-next-sect-wrapper">
                 <div class="main-sect__to-next-sect-arrow">
-                    <a href="#about">&xvee;</a>
+                    <a href="#about" class="main-sect__to-next-sect-link">&xvee;</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <section id="about" class="about-sect">
+    <section id="about" class="section about-sect">
         <div class="container">
             <h2 class="about-sect__header">Обо мне</h2>
             <h3 class="about-sect__subheader">Кто я</h3>
@@ -84,16 +84,18 @@
                     <br>
                     <p>Почему я считаю, что добьюсь успеха в Веб-разработке:</p>
                     <ul>
-                        <li>получаю удовольствие от самообучения - люблю узнавать новое</li>
-                        <li>умею работать в команде и прислушиваться к мнению других людей</li>
-                        <li>высокая мотивация стать профессионалом в сфере разработки и изменить свою жизнь</li>
-                        <li>привык доводить дело до конца</li>
+                        <li>получаю удовольствие от самообучения - люблю узнавать новое;</li>
+                        <li>умею работать в команде и прислушиваться к мнению других людей;</li>
+                        <li>высокая мотивация стать профессионалом в сфере разработки и изменить свою жизнь;</li>
+                        <li>привык доводить дело до конца.</li>
                     </ul>
                     <br>
-                    <p>Посмотрите <a href="#" target="_blank">мое резюме</a> и узнайте обо мне больше!</p>
+                    <p>Подробнее об используемых мной технологиях разработки, инструментах, методологиях смотрите в <a href="#" target="_blank">моем резюме</a>.</p>
                 </div>
         
                 <div class="about-sect__skills">
+                    <div class="about-sect__skills-header">Ключевые навыки</div>
+
                     <div class="about-sect__skills-wrapper">
                         <div>HTML5</div>
                         <div>70%</div>
@@ -142,7 +144,7 @@
         </div>
     </section>
 
-    <section id="portfolio" class="portfolio-sect">
+    <section id="portfolio" class="section portfolio-sect">
         <div class="container">
             <h2 class="portfolio-sect__header">Портфолио</h2>
             <h3 class="portfolio-sect__subheader">Мои работы</h3>
@@ -167,7 +169,7 @@
         </div>
     </section>
 
-    <footer id="contacts" class="contacts-sect">
+    <footer id="contacts" class="section contacts-sect">
         <div class="container">
             <h2 class="contacts-sect__header">Всегда на связи</h2>
             <h3 class="contacts-sect__subheader">Контакты</h3>
@@ -208,7 +210,6 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>

@@ -81,10 +81,10 @@
         font-size: 18px;
         line-height: 18px;
         font-weight: 400;
-        a {
-            color: $light-color;
-            text-decoration: none;
-            padding: 8px;
-        }
+    }
+    &__to-next-sect-link {
+        color: $light-color;
+        text-decoration: none;
+        padding: 8px;
     }
 }
