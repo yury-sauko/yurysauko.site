@@ -21,7 +21,7 @@ const observer = new IntersectionObserver((entries) => {
         }
     });
 }, {
-    threshold: 0.9,
+    threshold: 0.7,
 });
 
 document.querySelectorAll('.section').forEach(
@@ -30,6 +30,17 @@ document.querySelectorAll('.section').forEach(
 
 document.querySelector('.menu__list').addEventListener('click', (event) => {
     if (event.target.classList.contains('menu__link')) {
+        event.preventDefault();
+
+        window.scrollTo({
+            top: document.getElementById(getId(event.target)).offsetTop,
+            behavior: "smooth",
+        });
+    }
+});
+
+document.querySelector('.main-sect__to-next-sect-hidden-container').addEventListener('click', (event) => {
+    if (event.target.classList.contains('main-sect__to-next-sect-hidden')) {
         event.preventDefault();
 
         window.scrollTo({

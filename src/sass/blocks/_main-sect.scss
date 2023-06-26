@@ -66,6 +66,29 @@
             color: $second-color;
         }
     }
+    &__to-next-sect-hidden {
+        display: inline-block;
+        margin-top: 18px;
+        font-size: 13px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #ffa500;
+        text-decoration: none;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        &:focus {
+            width: auto;
+            height: auto;
+            outline: 1px dashed $light-color;
+            outline-offset: 5px;
+            transition: all 0.2s linear;
+        }
+        &:active {
+            color: red;
+            transition: color 0.2s linear;
+        }
+    }
     &__to-next-sect-wrapper {
         position: absolute;
         bottom: 25px;

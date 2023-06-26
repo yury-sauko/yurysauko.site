@@ -25,6 +25,10 @@
         font-size: 36px;
         font-weight: 700;
         color: $dark-color;
+        &:focus {
+            outline: 2px dashed $dark-color;
+            outline-offset: 5px;
+        }
     }
     &__wrapper {
         display: flex;
@@ -37,7 +41,6 @@
         font-size: 16px;
         line-height: 30px;
         font-weight: 400;
-        color: $dark-color;
         border: 2px solid $dark-color;
         border-radius: 10px;
         background-color: $grey-color;
@@ -47,11 +50,17 @@
         &:nth-child(2) {
             margin-top: 15px;
         }
-        &:hover {
+        &:focus-within, &:hover {
             color: $light-color;
             border-color: $second-color;
             background-color: $second-color;
-            transition: all 0.3s;
+            outline: none;
+            transition: all 0.2s linear;
+        }
+        &:active {
+            background-color: $light-color;
+            color: red;
+            transition: all 0.2s linear;
         }
     }
     &__item {
@@ -76,12 +85,15 @@
                 color: $dark-color;
                 padding-bottom: 10px;
             }
-            &:hover {
+            &:focus-within {
+                outline: 2px solid $second-color;
+                outline-offset: 5px;
+            }
+            &:focus-within, &:hover, &:active {
                 background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                         url(../img/Uber-site.png) center center / cover no-repeat;
                 .portfolio-sect__link {
                     display: inline-block;
-                    transition: all 0.3s;
                 }
             }
         }
@@ -99,12 +111,15 @@
                 color: $dark-color;
                 padding-bottom: 10px;
             }
-            &:hover {
+            &:focus-within {
+                outline: 2px solid $second-color;
+                outline-offset: 5px;
+            }
+            &:focus-within, &:hover, &:active {
                 background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
                         url(../img/Pulse-site.png) center center / cover no-repeat;
                 .portfolio-sect__link {
                     display: inline-block;
-                    transition: all 0.3s;
                 }
             }
         }
@@ -121,11 +136,14 @@
                 color: $dark-color;
                 padding-bottom: 10px;
             }
-            &:hover {
+            &:focus-within {
+                outline: 2px solid $second-color;
+                outline-offset: 5px;
+            }
+            &:focus-within, &:hover, &:active {
                 background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
                 .portfolio-sect__link {
                     display: inline-block;
-                    transition: all 0.3s;
                 }
             }
         }
